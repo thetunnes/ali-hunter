@@ -1,0 +1,6 @@
+.wrapper-alihunter {
+  z-index: 999;
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+}
