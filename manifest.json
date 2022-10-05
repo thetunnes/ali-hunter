@@ -3,8 +3,9 @@
   "name": "Ali Hunter",
   "description": "Auxilia na compra em lojas shopify",
   "author": "Tunnes",
+  "version": "1.0",
   "icons": {
-    "32": "alihunter-icon.jpg"
+    "32": "alihunter-logo.png"
   },
   "action": {
     "default_title": "Ali Hunter"
@@ -14,7 +15,7 @@
     {
       "matches": ["<all_urls>"],
       "css": ["styles.css"],
-      "js": ["jquery-3.6.1.min.js", "backgroud.js"]
+      "js": ["jquery-3.6.1.min.js", "background.js"]
     }
   ]
 }

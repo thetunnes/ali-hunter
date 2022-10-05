@@ -1,6 +1,19 @@
-.wrapper-alihunter {
-  z-index: 999;
+#wrapper-alihunter {
+  z-index: 9999998;
   position: fixed;
   left: 12px;
   bottom: 12px;
+  width: 100%;
+  max-width: 768px;
+  padding: 1rem;
+}
+
+#wrapper-alihunter .icon-alihunter {
+  max-width: 120px;
+
+}
+
+#wrapper-alihunter .icon-alihunter img {
+  width: 100%;
+  z-index: 999;
 }
