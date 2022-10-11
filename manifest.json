@@ -14,8 +14,15 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
+      "exclude_matches": ["https://www.google.com/*"],
       "css": ["styles.css"],
       "js": ["jquery-3.6.1.min.js", "background.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "ordersIcon.svg", "logoAliHunter.svg", "alihunter.html"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

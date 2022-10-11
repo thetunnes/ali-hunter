@@ -1,19 +1,151 @@
+:root {
+  --ah-white: #fff;
+  --ah-white-hover: #eaeaea;
+  --ah-primary: #e9162b;
+  --ah-primary-hover: #cf2a27;
+  --ah-red-100: #e9162b;
+  --ah-grey-100: #2e2e2e;
+}
+
 #wrapper-alihunter {
   z-index: 9999998;
   position: fixed;
   left: 12px;
   bottom: 12px;
-  width: 100%;
+  width: max-content;
   max-width: 768px;
   padding: 1rem;
 }
 
-#wrapper-alihunter .icon-alihunter {
-  max-width: 120px;
+.whiteboard-alihunter {
+  width: 100%;
+  min-width: 512px;
+  max-width: 768px;
+  height: 70vh;
+  background: var(--ah-white);
+  display: none !important;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  overflow: scroll;
 
 }
 
-#wrapper-alihunter .icon-alihunter img {
+.show-whiteboard {
+  display: block !important;
+}
+
+.content-alihunter {
+  display: flex;
+  align-items: center;
+}
+
+.content-alihunter .icon-alihunter {
+  z-index: 99999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ah-primary);
+  width: 64px;
+  height: 64px;
+  padding: 1rem;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+}
+
+.content-alihunter .icon-alihunter img {
   width: 100%;
-  z-index: 999;
+}
+
+.content-alihunter .menus-alihunter {
+  z-index: 99999999;
+  width: max-content;
+  height: 64px;
+  padding: 0.75rem 1.5rem;
+  background-color: #1c1f28;
+  color: var(--ah-white);
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.menus-alihunter .box-menu {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  color: var(--ah-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
+
+  font-size: 12px;
+  transition: all 0.4s;
+
+  
+}
+.menus-alihunter button p {
+  margin: 0;
+}
+
+.menus-alihunter button svg {
+  width: 28px;
+}
+
+.box-menu:hover:not(.selected-option-ah) p {
+  color: var(--ah-red-100);
+  transition: color 0.4s;
+}
+
+.box-menu:hover:not(.selected-option-ah) path {
+  fill: var(--ah-red-100);
+  transition: fill 0.4s;
+}
+
+ .selected-option-ah {
+  border: 1px solid var(--ah-primary-hover) !important;
+  background: var(--ah-primary-hover) !important;
+}
+
+#list-products-ah {
+  list-style-type: none;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#list-products-ah > li {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  font-size: 14px;
+}
+
+#list-products-ah > li + li {
+  margin-top: 0.5rem;
+}
+
+#list-products-ah > li time {
+  background: var(--ah-primary-hover);
+  font-size: 12px;
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
+  color: white;
+  opacity: 0.8;
+}
+#list-products-ah > li img {
+  width: 40px;
+  object-fit: contain;
+}
+
+#sentinela {
+  width: 100px;
+  height: 15px;
+  background: transparent;
 }
