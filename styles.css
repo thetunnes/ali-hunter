@@ -4,7 +4,7 @@
   --ah-primary: #e9162b;
   --ah-primary-hover: #cf2a27;
   --ah-red-100: #e9162b;
-  --ah-grey-100: #2e2e2e;
+  --ah-gray-100: #2e2e2e;
 }
 
 #wrapper-alihunter {
@@ -113,7 +113,7 @@
 
 #list-products-ah {
   list-style-type: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -132,16 +132,26 @@
 }
 
 #list-products-ah > li time {
+  flex: 1;
+  width: 120px;
+  text-align: center;
+  line-height: 2.4;
   background: var(--ah-primary-hover);
   font-size: 12px;
   border-radius: 16px;
-  padding: 0.5rem 1rem;
+  padding: 4px 8px;
   color: white;
   opacity: 0.8;
 }
 #list-products-ah > li img {
   width: 40px;
   object-fit: contain;
+  border: 1px solid var(--ah-gray-100);
+  border-radius: 8px;
+}
+
+#list-products-ah > li abbr {
+  flex: 3;
 }
 
 #sentinela {
